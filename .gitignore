@@ -1,0 +1,89 @@
+# -----------------------
+# Python
+# -----------------------
+__pycache__
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.so
+*.egg
+*.egg-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+*.manifest
+*.spec
+
+# -----------------------
+# Virtual Environment
+# -----------------------
+venv/
+.env/
+.venv/
+env/
+ENV/
+*.env
+
+# -----------------------
+# IDE / Editor
+# -----------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# -----------------------
+# OS / System Files
+# -----------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -----------------------
+# Logs / Temp / Cache
+# -----------------------
+*.log
+*.tmp
+*.bak
+*.swp
+*.sqlite3
+*.db
+.cache/
+.mypy_cache/
+.pytest_cache/
+coverage/
+htmlcov/
+__pypackages__/
+
+# -----------------------
+# Docker / Compose
+# -----------------------
+/docker-data/
+/*.pid
+*.pid.lock
+
+# -----------------------
+# Testing / Reports
+# -----------------------
+.tox/
+.nox/
+.coverage
+.coverage.*
+.pytest_cache/
+
+# -----------------------
+# Project specific
+# -----------------------
+# If using FastAPI + Uvicorn / Gunicorn logs
+*.log
+
+# If using Alembic
+alembic/versions/*.pyc
+
+# If you have uploaded files in project
+uploads/
+media/
+staticfiles/
+tmp/
