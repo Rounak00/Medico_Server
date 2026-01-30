@@ -104,7 +104,7 @@ async def load_vetorstore(uploaded_files, role: str, doc_id: str):
                 "role": role,
                 "doc_id": doc_id,
                 "page": chunk.metadata.get("page", 0),
-                "text": chunk.page_content  # ✅ Store the text!
+                "text": chunk.page_content  #Store the text
             } for i, chunk in enumerate(chunks)
         ]
 
@@ -117,7 +117,7 @@ async def load_vetorstore(uploaded_files, role: str, doc_id: str):
                 text,
                 model="sentence-transformers/all-MiniLM-L6-v2"
             )
-            # ✅ Convert numpy array to list
+            #Convert numpy array to list
             if hasattr(emb, 'tolist'):
                 emb = emb.tolist()
             elif isinstance(emb, list) and len(emb) > 0 and isinstance(emb[0], list):
